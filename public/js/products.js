@@ -7,7 +7,7 @@ const showButtons = () => {
     const types = products.map((product) => product.type);
     console.log(types);
   
-     //Set is a collection of unique values. Each value can only occur once in a Set.
+    //Set is a collection of unique values. Each value can only occur once in a Set.
     const uniqueTypes = new Set(types);
     console.log(uniqueTypes);
   
