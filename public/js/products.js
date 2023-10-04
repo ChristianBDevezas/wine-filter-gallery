@@ -90,7 +90,7 @@ galleryLinks.forEach((link) => {
             const dataFilter = targetButton.getAttribute("data-filter");
             console.log(dataFilter);
         
-            if(targetButton.dataset.filter === 'Todos') {
+            if(dataFilter === 'Todos') {
               newProducts = [...products];
             }
             else {

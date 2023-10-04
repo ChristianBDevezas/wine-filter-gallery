@@ -30,14 +30,14 @@ const products = [
     {
         id: 4,
         title: 'Estandon Heritage',
-        type: 'Rosa',
+        type: 'Rosé',
         image: './public/img/bottles/5-estandon.png',
         price: '92,80',
     },
     {
         id: 5,
         title: 'Tramari',
-        type: 'Rosa',
+        type: 'Rosé',
         image: './public/img/bottles/6-tramari.png',
         price: '95,50',
     },
@@ -86,14 +86,14 @@ const products = [
     {
         id: 12,
         title: 'Henri Leblanc',
-        type: 'Rosa',
+        type: 'Rosé',
         image: './public/img/bottles/13-stardust.png',
         price: '77,00',
     },
       {
         id: 13,
         title: 'Gramona Imperial',
-        type: 'Rosa',
+        type: 'Rosé',
         image: './public/img/bottles/14-lumière.png',
         price: '93,50',
     },
