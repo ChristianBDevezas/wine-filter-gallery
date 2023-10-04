@@ -110,5 +110,7 @@ const products = [
         type: 'Espumante',
         image: '../../public/img/bottles/16-gramona-imperial.png',
         price: '88,00',
-    },
-  ];
+    }
+]
+
+export default products;

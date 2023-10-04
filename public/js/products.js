@@ -1,3 +1,5 @@
+import products from "./products-objects.js";
+
 const categoryButtons = document.querySelector(".products__categories__links");
 let newProducts = [...products];
 
