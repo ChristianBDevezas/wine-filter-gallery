@@ -85,7 +85,7 @@ const products = [
     },
     {
         id: 12,
-        title: 'Henri Leblanc',
+        title: 'Stardust',
         type: 'Rosé',
         image: './public/img/bottles/13-stardust.png',
         price: '77,00',
@@ -99,7 +99,7 @@ const products = [
     },
       {
         id: 14,
-        title: 'Stardust',
+        title: 'Henri Leblanc',
         type: 'Espumante',
         image: './public/img/bottles/15-henri-leblanc.png',
         price: '85,50',

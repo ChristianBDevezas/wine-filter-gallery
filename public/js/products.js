@@ -3,6 +3,7 @@ import products from "./products-objects.js";
 const categoryButtons = document.querySelector(".products__categories__links");
 let newProducts = [...products];
 
+// Function to show buttons
 const showButtons = () => {
     const types = products.map((product) => product.type);
     console.log(types);
@@ -35,6 +36,7 @@ showButtons();
 
 const galleryContainer = document.querySelector(".products__gallery");
 
+// Function to show wines
 const showProducts = () => {  
     galleryContainer.innerHTML = newProducts.map((product) => {
         const {id, title, type, image, price} = product;
@@ -58,8 +60,9 @@ const showProducts = () => {
   };
 showProducts();
 
+// Show the selected wines
 const galleryLinks = document.querySelectorAll(".products__categories__link a");
-const galleryImages = document.querySelectorAll(".products__item");
+// const galleryImages = document.querySelectorAll(".products__item");
 
 galleryLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
@@ -100,6 +103,22 @@ galleryLinks.forEach((link) => {
             }
             
             showProducts();
+
+            userInput.value = "";
         }
     });    
+});
+
+// Input Filter
+const form = document.querySelector(".search-wine");
+const userInput = document.querySelector(".input-field");
+
+form.addEventListener("keyup", () => {
+    const userInputValue = userInput.value;
+
+    newProducts = products.filter((wine) => {
+        return wine.title.toLowerCase().includes(userInputValue);
+    });
+
+    showProducts();
 });
